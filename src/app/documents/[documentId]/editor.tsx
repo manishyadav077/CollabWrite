@@ -11,6 +11,8 @@ import ImageResize from "tiptap-extension-resize-image";
 import { useEditor, EditorContent } from "@tiptap/react";
 import StarterKit from "@tiptap/starter-kit";
 import Underline from "@tiptap/extension-underline"
+import FontFamily from '@tiptap/extension-font-family'
+import TextStyle from "@tiptap/extension-text-style";
 
 import { useEditorStore } from "@/store/use-editor-store";
 
@@ -52,6 +54,8 @@ export const Editor = () => {
     extensions: [
       StarterKit,
       Table,
+      FontFamily,
+      TextStyle,
       TableCell,
       TableHeader,
       TableRow,
